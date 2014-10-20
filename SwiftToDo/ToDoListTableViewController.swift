@@ -13,6 +13,15 @@ class ToDoListTableViewController: UITableViewController {
     //properties
     var toDoItems:[ToDoItem] = []
     
+    func writeToFile()->Bool{
+        var text = ""
+        for item in toDoItems{
+            text = item.name + "|"+ item.completed.description
+            text = text+ "@"
+        }
+        text.writeToFile(<#path: String#>, atomically: <#Bool#>, encoding: <#NSStringEncoding#>, error: <#NSErrorPointer#>)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         println("viewDidLoad")

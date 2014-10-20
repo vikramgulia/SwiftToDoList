@@ -417,6 +417,7 @@
 				AC749DC219D863440067ADBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC749DC319D863440067ADBF /* Build configuration list for PBXNativeTarget "SwiftToDoTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +426,7 @@
 				AC749DC519D863440067ADBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
