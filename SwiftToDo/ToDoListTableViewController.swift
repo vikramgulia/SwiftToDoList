@@ -13,6 +13,7 @@ class ToDoListTableViewController: UITableViewController {
     //properties
     var toDoItems:[ToDoItem] = []
     
+    /**
     func writeToFile()->Bool{
         var text = ""
         for item in toDoItems{
@@ -21,6 +22,7 @@ class ToDoListTableViewController: UITableViewController {
         }
         text.writeToFile(<#path: String#>, atomically: <#Bool#>, encoding: <#NSStringEncoding#>, error: <#NSErrorPointer#>)
     }
+*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +75,7 @@ class ToDoListTableViewController: UITableViewController {
         // Configure the cell...
         
         var toDoItem = self.toDoItems[indexPath.row]
-        cell.textLabel?.text = toDoItem.name
+        cell.textLabel.text = toDoItem.name
         if(toDoItem.completed){
             cell.accessoryType = .Checkmark
         } else {
